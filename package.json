@@ -1,14 +1,26 @@
 {
   "name": "timefreeze",
   "version": "1.0.0",
-  "description": "",
+  "description": "Freeze time to a specific date for testing.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "tape": "^4.5.1"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KoryNunn/timefreeze.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KoryNunn/timefreeze/issues"
+  },
+  "homepage": "https://github.com/KoryNunn/timefreeze#readme"
 }
