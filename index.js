@@ -28,6 +28,9 @@ for(var key in OriginalDate){
     FrozenDate[key] = OriginalDate[key];
 }
 
+// Non-enumerated
+FrozenDate.UTC = OriginalDate.UTC;
+
 FrozenDate.now = function(){
     return new Date().getTime();
 };
@@ -47,9 +50,11 @@ function reset(){
 }
 
 function set(date){
-    if(freezes.length){
-        freezes[freezes.length - 1] = date;
+    if(!freezes.length){
+        freeze();
     }
+
+    freezes[freezes.length - 1] = date;
 }
 
 function isFrozen(){

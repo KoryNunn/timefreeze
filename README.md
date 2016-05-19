@@ -31,7 +31,7 @@ timefreeze.unfreeze();
 // go back to normal reguardless of how many times freeze() has been called.
 timefreeze.reset();
 
-// set the current frozen time to 2020-1-1
+// set the current frozen time to 2020-1-1 (Will freeze if not currently frozen)
 timefreeze.set(new Date(2020,1,1));
 
 // check if time is frozen
