@@ -1,6 +1,6 @@
 {
   "name": "timefreeze",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Freeze time to a specific date for testing.",
   "main": "index.js",
   "scripts": {
