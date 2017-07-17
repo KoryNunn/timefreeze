@@ -94,6 +94,19 @@ test('now', function(t){
     t.equal(b, testDate1.getTime());
 });
 
+test('parse', function(t){
+    t.plan(1);
+
+    timefreeze.freeze(testDate1);
+
+    var a = Date.parse('2017-01-01');
+
+    timefreeze.reset();
+
+    t.equal(a, testDate1.getTime());
+});
+
+
 test('set a date while frozen', function(t){
     t.plan(2);
 

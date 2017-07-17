@@ -35,6 +35,10 @@ FrozenDate.now = function(){
     return new Date().getTime();
 };
 
+FrozenDate.parse = function() {
+    return new Date().getTime();
+};
+
 function freeze(date){
     freezes.push(date);
     global.Date = FrozenDate;
